@@ -9,11 +9,9 @@
 ```SQL
   USE master;
   alter authorization on DATABASE :: [NOM_BDD] to [User Name];
-```
 
-```SQL
   USE NOM_BDD;
-  sp_change_users_login 'update_one', 'user_cbase', 'APPL_CBASE'
+  exec('sp_change_users_login ''update_one'', ''user_cbase'', ''APPL_CBASE''');
 ```
   
 ### Objets métiers:
