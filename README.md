@@ -18,3 +18,5 @@
 
 FactoryDocumentVente.ExistPiece ne va pas regarder dans la colonne dl_piecebl.
 
+Le process IPMEncoder créé automatiquement les lignes d'analytiques, sauf si la propriété bAnalytiqueAuto est mise sur false.
+
