@@ -13,6 +13,19 @@
   USE NOM_BDD;
   exec('sp_change_users_login ''update_one'', ''user_cbase'', ''APPL_CBASE''');
 ```
+ 
+### Déconnexion des utilisateurs:
+
+```SQL  
+dbcc cbsqlxp (free);
+delete from cbMessage;
+delete from cbNotification;
+delete from cbRegFile;
+delete from cbRegMessage;
+delete from cbRegUser;
+delete from cbRegMessage;
+delete from cbUserSession;
+```
   
 ### Objets métiers:
 
