@@ -8,7 +8,7 @@
 * Exécuter les commandes:
 ```SQL
   USE master;
-  alter authorization on DATABASE :: [NOM_BDD] to [User Name];
+  alter authorization on DATABASE :: [NOM_BDD] to sa;
 
   USE NOM_BDD;
   exec('sp_change_users_login ''update_one'', ''user_cbase'', ''APPL_CBASE''');
